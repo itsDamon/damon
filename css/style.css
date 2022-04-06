@@ -50,11 +50,6 @@ h2{
 p,li{
     line-height: 35px;
 }
-
-#image{
-    /* width: 60%; */
-}
-
 .images{
     display: flex;
     width: 40%;
