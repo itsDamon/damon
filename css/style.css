@@ -14,15 +14,19 @@ main {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/.png);
     height: 100vh;
-    font-size: 450%;
+    
+}
+h1{
+    text-align: center;
+    font-size: 175px;
     width: 100%;
     color: #ffd60a;
 }
 h6{
     padding-top: 50px;
-    font-size: 60%;
+    font-size: 40px ;
+    color: #ffd60a;
 }
 
 .container{
@@ -31,8 +35,8 @@ h6{
     min-height: 550px;
     flex-flow: row;
     padding-top: 20px;
-    font-size: 150%;
 }
+
 
 .content {
     width: 60%;
@@ -46,15 +50,16 @@ h6{
 h2{
     color:#ffd60a;
     padding-bottom: 20px;
+    font-size: 100%;
 }
 p,li{
     line-height: 35px;
 }
 .images{
     display: flex;
-    width: 40%;
     justify-content: center;
     align-items: center;
+    width: 40%;
     
 }
 img{
@@ -72,13 +77,17 @@ img{
 a{
     color:white;
 }
-autori_box{
-    display: inline-block;
-    align-items: center;
-}
 div.footer{
     padding-bottom: 0%;
 }
 summary{
     padding-bottom: 10px;
+}
+
+@media (max-width:767px) {
+
+    h1{font-size: 90px;}
+
+    h6{font-size: 23px ;}
+
 }
