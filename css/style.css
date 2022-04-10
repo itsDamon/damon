@@ -19,7 +19,7 @@ main {
 }
 h1{
     text-align: center;
-    font-size: 175px;
+    font-size: 155px;
     width: 100%;
     color: #ffd60a;
 }
@@ -36,10 +36,11 @@ h6{
     flex-flow: row;
     padding-top: 20px;
 }
-
-
+p{
+    font-size: 23px;
+}
 .content {
-    width: 60%;
+    width: 65%;
     padding-top: 50px;
     padding-left: 50px;
     color: #fff;
@@ -50,16 +51,19 @@ h6{
 h2{
     color:#ffd60a;
     padding-bottom: 20px;
-    font-size: 100%;
+    font-size: 32px;
 }
 p,li{
     line-height: 35px;
+}
+ul,li{
+    font-size: 20px;
 }
 .images{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
+    width: 35%;
     
 }
 img{
@@ -85,9 +89,12 @@ summary{
 }
 
 @media (max-width:767px) {
-
+    
     h1{font-size: 90px;}
+    h6{font-size: 28px;}
 
-    h6{font-size: 23px ;}
-
+    .container{flex-flow: column; padding-top: 60px;}
+    .content{width: 100%; padding:20px;}
+    .images{width: 100%;}
+    img{width: 250px;}
 }
