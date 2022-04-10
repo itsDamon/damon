@@ -91,11 +91,14 @@ summary{
 
 @media only screen and (max-width:767px) {
     
-    h1{font-size: 90px;}
+    h1{font-size: 80px;}
     h6{font-size: 28px;}
-
+    p{font-size: 18px;}
+    ul,li{font-size: 17px;}
     .container{flex-flow: column; padding-top: 60px;}
     .content{width: 100%; padding:20px;}
     .images{width: 100%;}
     img{width: 250px;}
+    
+    .footer{flex-flow: column;}
 }
