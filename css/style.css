@@ -85,10 +85,11 @@ div.footer{
     padding-bottom: 0%;
 }
 summary{
+    cursor: pointer;
     padding-bottom: 10px;
 }
 
-@media (max-width:767px) {
+@media only screen and (max-width:767px) {
     
     h1{font-size: 90px;}
     h6{font-size: 28px;}
