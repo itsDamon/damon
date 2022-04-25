@@ -8,21 +8,23 @@
 
 html{
     background: #001d3d;
-}  
+} 
+
 main {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
 }
+
 h1{
     text-align: center;
     font-size: 140px;
     width: 100%;
     color: #ffd60a;
 }
+
 h6{
     text-align: center;
     padding-top: 50px;
@@ -37,39 +39,47 @@ h6{
     flex-flow: row;
     padding-top: 20px;
 }
+
 p{
     font-size: 23px;
 }
+
 .content {
     width: 65%;
     padding-top: 50px;
     padding-left: 50px;
     color: #fff;
 }
+
 .odd {
     flex-flow: row-reverse;
 }
+
 h2{
     color:#ffd60a;
     padding-bottom: 20px;
     font-size: 32px;
 }
+
 p,li{
     line-height: 35px;
 }
+
 ul,li{
     font-size: 20px;
 }
+
 .images{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 35%;
-    
 }
+
 img{
     width: 80%;
 }
+
 .footer{
     color:white;
     padding: 20px;
@@ -79,16 +89,21 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
 a{
     color:white;
 }
+
 div.footer{
     padding-bottom: 0%;
 }
+
 summary{
     cursor: pointer;
     padding-bottom: 10px;
 }
+
+/* MEDIA */
 
 @media only screen and (max-width: 900px) {
     h1{font-size: 90px;}
@@ -101,13 +116,21 @@ summary{
     h6{font-size: 28px;}
     p{font-size: 18px;}
     ul,li{font-size: 17px;}
-    .container{
-        flex-flow: column;
-        padding-top: 60px;
-    }
+    .container{ flex-flow: column; padding-top: 60px;}
 
     .content{width: 100%; padding:20px;}
     .images{width: 100%;}
 
     .footer{flex-flow: column;}
+}
+
+/* ANIMATION */
+
+@keyframes blinkText {
+    0% { color: #ffd60a;}
+    50% { color: #ff6c0a;}
+    100% { color: #ffd60a;}
+}
+#blink {
+    animation: 2s blinkText ease infinite;
 }
