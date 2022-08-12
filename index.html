@@ -100,4 +100,12 @@
         </div>
     </section>
     </body>
+    <script>
+        let allImages = document.querySelectorAll("img");
+        allImages.forEach((value)=>{
+            value.oncontextmenu = (e)=>{
+            e.preventDefault();
+            }
+        })
+    </script>
 </html>
