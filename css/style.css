@@ -79,6 +79,7 @@ ul,li{
 
 img{
     width: 80%;
+    onContextMenu: return false;
 }
 
 .footer{
