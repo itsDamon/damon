@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     user-select: none;
-    user-drag: none;
+    -webkit-user-drag: none;
 }
 
 html{
@@ -21,7 +21,7 @@ main {
 
 h1{
     text-align: center;
-    font-size: 140px;
+    font-size: 120px;
     width: 100%;
     color: #ffd60a;
 }
@@ -29,7 +29,7 @@ h1{
 h6{
     text-align: center;
     padding-top: 50px;
-    font-size: 40px ;
+    font-size: 35px ;
     color: #ffd60a;
 }
 
@@ -42,11 +42,11 @@ h6{
 }
 
 p{
-    font-size: 23px;
+    font-size: 21px;
 }
 
 .content {
-    width: 65%;
+    width: 70%;
     padding-top: 50px;
     padding-left: 50px;
     color: #fff;
@@ -74,7 +74,7 @@ ul,li{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 30%;
 }
 
 img{
@@ -107,30 +107,66 @@ summary{
 /* MEDIA */
 
 @media only screen and (max-width: 900px) {
-    h1{font-size: 90px;}
-    .footer{flex-flow: column;}
+    h1 {
+        font-size: 90px;
+    }
+
+    .footer {
+        flex-flow: column;
+    }
 }
 
 @media only screen and (max-width:767px) {
-    
-    h1{font-size: 70px;}
-    h6{font-size: 28px;}
-    p{font-size: 18px;}
-    ul,li{font-size: 17px;}
-    .container{ flex-flow: column; padding-top: 60px;}
+    h1 {
+        font-size: 70px;
+    }
 
-    .content{width: 100%; padding:20px;}
-    .images{width: 100%;}
+    h6 {
+        font-size: 28px;
+    }
 
-    .footer{flex-flow: column;}
+    p {
+        font-size: 18px;
+    }
+
+    ul,
+    li {
+        font-size: 17px;
+    }
+
+    .container {
+        flex-flow: column;
+        padding-top: 60px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .images {
+        width: 100%;
+    }
+
+    .footer {
+        flex-flow: column;
+    }
 }
 
 /* ANIMATION */
 
 @keyframes blinkText {
-    0% { color: #ffd60a;}
-    50% { color: #ff6c0a;}
-    100% { color: #ffd60a;}
+    0% {
+        color: #ffd60a;
+    }
+
+    50% {
+        color: #ff6c0a;
+    }
+
+    100% {
+        color: #ffd60a;
+    }
 }
 #blink {
     animation: 2s blinkText ease infinite;
